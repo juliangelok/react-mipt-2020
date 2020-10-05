@@ -1,0 +1,58 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "node server.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "Julia Parfenova",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "@svgr/webpack": "latest",
+    "axios": "^0.20.0",
+    "babel-loader": "latest",
+    "babel-plugin-import": "latest",
+    "css-loader": "latest",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "file-loader": "latest",
+    "history": "latest",
+    "path": "^0.12.7",
+    "rc-color-picker": "^1.2.6",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "redux": "latest",
+    "redux-logger": "latest",
+    "redux-thunk": "latest",
+    "style-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest",
+    "webpack-merge": "^5.1.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  }
+}
